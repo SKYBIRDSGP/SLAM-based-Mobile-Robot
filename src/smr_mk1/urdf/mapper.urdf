@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="mapper" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="world"/>
+  <!-- Base Link -->
+  <link name="base">
+    <visual>
+      <origin xyz="-0.032357352349208667874 -0.026099631679244339466 0.010199828612239798115" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/base.dae"/>
+      </geometry>
+      <material name="">
+        <color rgba="0 0 1 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.032357352349208667874 -0.026099631679244339466 0.010199828612239798115" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/base.dae"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.032503829119351485 -0.025520057595977974074 0.022735266158650530716" rpy="0 0 0"/>
+      <mass value="0.38013771694769277198" />
+      <inertia ixx="0.00035046798151367673487" ixy="-1.1953578983760943577e-07" ixz="-1.9730955444573732889e-09" iyy="0.00015287781224622583841" iyz="-2.2187963697490440465e-06" izz="0.00046327180845463929691" />
+    </inertial>
+  </link>
+  <joint name="dummy" type="fixed">
+    <!-- <origin xyz="0.0051426476507913376768 -0.0010996316792443419814 0.022699828612239798808" rpy="-1.570796326794896558 -0 1.570796326794896558" /> -->
+    <parent link="world" />
+    <child link="base" />
+    <!-- <axis xyz="0 0 1"/> -->
+  </joint>
+
+  <!-- Wheel 1 -->
+  <link name="wheel_1">
+    <visual>
+      <origin xyz="0 0 -0.020000000000000000416" rpy="-1.570796326794896558 -1.570796326794896558 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/wheel.dae"/>
+      </geometry>
+      <material name="">
+        <color rgba="0 0 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.020000000000000000416" rpy="-1.570796326794896558 -1.570796326794896558 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/wheel.dae"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.8942974949788100334e-19 1.3110901189542138426e-18 -0.0070034071541546019657" rpy="0 0 0"/>
+      <mass value="0.047160230318905801972" />
+      <inertia ixx="8.757176544575715827e-06" ixy="0" ixz="0" iyy="8.7571765445757141329e-06" iyz="0" izz="1.3097847965326626509e-05" />
+    </inertial>
+  </link>
+
+  <joint name="front_right" type="continuous">
+    <origin xyz="0.0051426476507913376768 -0.0010996316792443419814 0.022699828612239798808" rpy="-1.570796326794896558 -0 1.570796326794896558" />
+    <parent link="base" />
+    <child link="wheel_1" />
+    <axis xyz="0 0 1"/>
+    <limit effort="1" velocity="20" />
+    <joint_properties friction="0.0"/>
+  </joint>
+
+  <!-- Wheel 2 -->
+  <link name="wheel_2">
+    <visual>
+      <origin xyz="0 0 -0.020000000000000003886" rpy="-1.570796326794896558 -1.570796326794896558 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/wheel.dae"/>
+      </geometry>
+      <material name="">
+        <color rgba="0 0 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.020000000000000003886" rpy="-1.570796326794896558 -1.570796326794896558 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/wheel.dae"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.8942974949788100334e-19 1.3110901189542138426e-18 -0.0070034071541546054351" rpy="0 0 0"/>
+      <mass value="0.047160230318905801972" />
+      <inertia ixx="8.757176544575715827e-06" ixy="0" ixz="0" iyy="8.7571765445757141329e-06" iyz="0" izz="1.3097847965326626509e-05" />
+    </inertial>
+  </link>
+
+  <joint name="front_left" type="continuous">
+    <origin xyz="-0.069857352349208673425 -0.051099631679244347793 0.022699828612239798808" rpy="1.570796326794896558 -0 1.57079632679489678" />
+    <parent link="base" />
+    <child link="wheel_2" />
+    <axis xyz="0 0 1"/>
+    <limit effort="1" velocity="20" />
+    <joint_properties friction="0.0"/>
+  </joint>
+
+  <!-- Wheel 3 -->
+  <link name="wheel_3">
+    <visual>
+      <origin xyz="0 0 -0.020000000000000000416" rpy="-1.570796326794896558 -1.570796326794896558 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/wheel.dae"/>
+      </geometry>
+      <material name="">
+        <color rgba="0 0 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.020000000000000000416" rpy="-1.570796326794896558 -1.570796326794896558 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/wheel.dae"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.8942974949788100334e-19 1.3110901189542138426e-18 -0.0070034071541546019657" rpy="0 0 0"/>
+      <mass value="0.047160230318905801972" />
+      <inertia ixx="8.757176544575715827e-06" ixy="0" ixz="0" iyy="8.7571765445757141329e-06" iyz="0" izz="1.3097847965326626509e-05" />
+    </inertial>
+  </link>
+
+  <joint name="rear_right" type="continuous">
+    <origin xyz="0.0051426476507913307379 -0.051099631679244347793 0.022699828612239798808" rpy="-1.570796326794896558 -0 1.570796326794896558" />
+    <parent link="base" />
+    <child link="wheel_3" />
+    <axis xyz="0 0 1"/>
+    <limit effort="1" velocity="20" />
+    <joint_properties friction="0.0"/>
+  </joint>
+
+  <!-- Wheel 4 -->
+  <link name="wheel_4">
+    <visual>
+      <origin xyz="2.168404344971008868e-19 0 -0.020000000000000003886" rpy="-1.570796326794896558 -1.570796326794896558 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/wheel.dae"/>
+      </geometry>
+      <material name="">
+        <color rgba="0 0 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.168404344971008868e-19 0 -0.020000000000000003886" rpy="-1.570796326794896558 -1.570796326794896558 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/wheel.dae"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.7410684999219883461e-20 1.3110901189542138426e-18 -0.0070034071541546054351" rpy="0 0 0"/>
+      <mass value="0.047160230318905801972" />
+      <inertia ixx="8.757176544575715827e-06" ixy="0"  ixz="0" iyy="8.7571765445757141329e-06" iyz="0" izz="1.3097847965326626509e-05" />
+    </inertial>
+  </link>
+
+
+
+  <joint name="rear_left" type="continuous">
+    <origin xyz="-0.069857352349208673425 -0.0010996316792443419814 0.022699828612239798808" rpy="1.570796326794896558 -0 1.57079632679489678" />
+    <parent link="base" />
+    <child link="wheel_4" />
+    <axis xyz="0 0 1"/>
+    <limit effort="1" velocity="20" />
+    <joint_properties friction="0.0"/>
+  </joint>
+
+  <link name="lidar">
+    <visual>
+      <origin xyz="0 0 0.004999999999999997502" rpy="3.141592653589793116 -0 0" />
+      <geometry>
+        <mesh filename="package://smr_mk1/meshes/lidar.dae"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.004999999999999997502" rpy="3.141592653589793116 -0 0" />
+      <geometry>
+      <mesh filename="package://smr_mk1/meshes/lidar.dae"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="3.1910424539196146308e-19 -9.9052314636918277962e-19 -0.0052941176470588241498" rpy="0 0 0"/>
+      <mass value="0.016689710972195771765" />
+      <inertia ixx="1.5427635798476531786e-06" ixy="0"  ixz="0" iyy="1.5427635798476531786e-06" iyz="0" izz="1.9757672547967058571e-06" />
+    </inertial>
+  </link>
+  
+  <joint name="lidar_sensor" type="fixed">
+    <origin xyz="-0.032357352349208667874 0.0089003683207556638646 0.042699828612239795755" rpy="3.141592653589793116 -0 0" />
+    <parent link="base" />
+    <child link="lidar" />
+    <axis xyz="0 0 1"/>
+    <limit effort="1" velocity="20" />
+    <joint_properties friction="0.0"/>
+  </joint>
+
+
+</robot>
