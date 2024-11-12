@@ -1,0 +1,4 @@
+source;share/smr_mk1/local_setup.bash
+source;share/smr_mk1/local_setup.dsv
+source;share/smr_mk1/local_setup.sh
+source;share/smr_mk1/local_setup.zsh

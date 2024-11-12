@@ -22,10 +22,12 @@ find_package(robot_state_publisher REQUIRED)
 
 install(
   DIRECTORY 
-    
+    config
     launch
     meshes
+    models
     urdf
+    worlds
         
   DESTINATION
     share/${PROJECT_NAME}

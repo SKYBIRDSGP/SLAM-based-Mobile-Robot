@@ -1,0 +1,160 @@
+[0.012s] Invoking command in '/home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sarvesh/SLAM-based-Mobile-Robot/src/smr_mk1 -DCMAKE_INSTALL_PREFIX=/home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1
+[0.099s] -- The C compiler identification is GNU 11.4.0
+[0.204s] -- The CXX compiler identification is GNU 11.4.0
+[0.220s] -- Detecting C compiler ABI info
+[0.287s] -- Detecting C compiler ABI info - done
+[0.297s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.297s] -- Detecting C compile features
+[0.298s] -- Detecting C compile features - done
+[0.302s] -- Detecting CXX compiler ABI info
+[0.375s] -- Detecting CXX compiler ABI info - done
+[0.390s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.391s] -- Detecting CXX compile features
+[0.391s] -- Detecting CXX compile features - done
+[0.398s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.540s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.705s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[0.707s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.770s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.777s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.789s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.829s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.853s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.911s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.914s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.010s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.046s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.096s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.108s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.208s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.209s] -- Found Threads: TRUE  
+[1.278s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.280s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.322s] -- Found ros2_control: 2.43.1 (/opt/ros/humble/share/ros2_control/cmake)
+[1.324s] -- Found gazebo_ros2_control: 0.4.10 (/opt/ros/humble/share/gazebo_ros2_control/cmake)
+[1.563s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.565s] -- Checking for module 'bullet>=2.82'
+[1.577s] --   Found bullet, version 3.05
+[1.696s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.748s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.794s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.829s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.848s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.854s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.863s] -- Searching for dependencies of ignition-math6
+[1.865s] -- Looking for OGRE...
+[1.866s] -- OGRE_PREFIX_WATCH changed.
+[1.871s] -- Checking for module 'OGRE'
+[1.883s] --   Found OGRE, version 1.9.0
+[1.920s] -- Found Ogre Ghadamon (1.9.0)
+[1.930s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.943s] -- Looking for OGRE_Paging...
+[1.952s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.952s] -- Looking for OGRE_Terrain...
+[1.960s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.960s] -- Looking for OGRE_Property...
+[1.967s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.968s] -- Looking for OGRE_RTShaderSystem...
+[1.976s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.976s] -- Looking for OGRE_Volume...
+[1.984s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.984s] -- Looking for OGRE_Overlay...
+[1.992s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.166s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.169s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.170s] -- Searching for dependencies of ignition-transport8
+[2.192s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.206s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.211s] -- Checking for module 'libzmq >= 4'
+[2.225s] --   Found libzmq , version 4.3.4
+[2.261s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.268s] -- Checking for module 'uuid'
+[2.281s] --   Found uuid, version 2.37.2
+[2.312s] -- Found UUID: TRUE  
+[2.315s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.315s] -- Searching for dependencies of ignition-msgs5
+[2.339s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.345s] -- Checking for module 'tinyxml2'
+[2.361s] --   Found tinyxml2, version 9.0.0
+[2.407s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.410s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.410s] -- Searching for dependencies of ignition-common3
+[2.411s] -- Looking for dlfcn.h - found
+[2.412s] -- Looking for libdl - found
+[2.413s] -- Found DL: TRUE  
+[2.428s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.429s] -- Searching for <ignition-common3> component [graphics]
+[2.431s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.432s] -- Searching for dependencies of ignition-common3-graphics
+[2.432s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.436s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.436s] -- Searching for dependencies of ignition-fuel_tools4
+[2.524s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.535s] -- Checking for module 'jsoncpp'
+[2.548s] --   Found jsoncpp, version 1.9.5
+[2.585s] -- Found JSONCPP: TRUE  
+[2.591s] -- Checking for module 'libzip'
+[2.606s] --   Found libzip, version 1.7.3
+[2.648s] -- Found ZIP: TRUE  
+[2.649s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.649s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.649s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.654s] -- Gazebo version: 11.10
+[2.654s] -- Checking for module 'tbb'
+[2.667s] --   Found tbb, version 2021.5.0
+[2.722s] -- Found joint_state_broadcaster: 2.37.3 (/opt/ros/humble/share/joint_state_broadcaster/cmake)
+[2.732s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.754s] -- Found joint_trajectory_controller: 2.37.3 (/opt/ros/humble/share/joint_trajectory_controller/cmake)
+[2.787s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[2.800s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.802s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.802s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.897s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.977s] -- Configuring done
+[2.984s] -- Generating done
+[2.987s] -- Build files have been written to: /home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1
+[3.002s] Invoked command in '/home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sarvesh/SLAM-based-Mobile-Robot/src/smr_mk1 -DCMAKE_INSTALL_PREFIX=/home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1
+[3.004s] Invoking command in '/home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1 -- -j8 -l8
+[3.030s] Invoked command in '/home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1 -- -j8 -l8
+[3.057s] Invoking command in '/home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1
+[3.061s] -- Install configuration: ""
+[3.061s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/config
+[3.061s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/config/mapper.yaml
+[3.061s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/launch
+[3.061s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/launch/world.launch.py
+[3.062s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/launch/Mapper_launch.py
+[3.062s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/launch/gazebo.launch.py
+[3.062s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/launch/mapper.launch.py
+[3.062s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/meshes
+[3.062s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/meshes/wheel.stl
+[3.063s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/meshes/base.dae
+[3.064s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/meshes/lidar.dae
+[3.064s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/meshes/base.stl
+[3.065s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/meshes/lidar.stl
+[3.065s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/meshes/wheel.dae
+[3.066s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/models
+[3.066s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/models/maze
+[3.066s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/models/maze/model.config
+[3.066s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/models/maze/model.sdf
+[3.066s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/urdf
+[3.066s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/urdf/mapper.urdf
+[3.066s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/urdf/Mapper.urdf
+[3.066s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/worlds
+[3.067s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/worlds/model.config
+[3.067s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/worlds/maze.world
+[3.067s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/ament_index/resource_index/package_run_dependencies/smr_mk1
+[3.067s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/ament_index/resource_index/parent_prefix_path/smr_mk1
+[3.067s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/environment/ament_prefix_path.sh
+[3.067s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/environment/ament_prefix_path.dsv
+[3.068s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/environment/path.sh
+[3.068s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/environment/path.dsv
+[3.068s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/local_setup.bash
+[3.068s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/local_setup.sh
+[3.068s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/local_setup.zsh
+[3.068s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/local_setup.dsv
+[3.068s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/package.dsv
+[3.068s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/ament_index/resource_index/packages/smr_mk1
+[3.068s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/cmake/smr_mk1Config.cmake
+[3.068s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/cmake/smr_mk1Config-version.cmake
+[3.069s] -- Installing: /home/sarvesh/SLAM-based-Mobile-Robot/install/smr_mk1/share/smr_mk1/package.xml
+[3.070s] Invoked command in '/home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sarvesh/SLAM-based-Mobile-Robot/build/smr_mk1
